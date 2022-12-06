@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Potta One', cursive;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno{
+    padding: 0 50px;
+}
+
+.header{
+    background: url(/resources/antojitos_el_modelo/portada.jpeg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 20%;
+    box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.596);
+}
+       .menu{
+           background: rgba(0, 0, 0, 0.527);
+           display: flex;
+           flex-flow: now nowrap;
+           height: 100px;
+           align-items: center;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.527);
+       }
+       .logo{
+           background: url(/resources/antojitos_el_modelo/logom.jpg);
+           background-position: center;
+           background-attachment: contain;
+           background-size: cover;
+           flex: 1 1 auto;
+           height: 80px;
+           width: 50px;
+           border-radius: 20px;
+       }
+       .nav{
+           flex: 5 1 auto;
+           display: flex;
+           justify-content: center;
+       }
+       a{
+           text-decoration: none;
+       }
+       .nav a{
+           color: #ffffff;
+           text-decoration: none;
+           text-transform: uppercase;
+           margin: 10px;
+           padding: 10px 10px;
+           letter-spacing: 2px;
+       }
+       .nav a:hover{
+           color: #ffc935;
+       }
+       .nav a:active{
+           color: #b40c0c;
+       }
+
+       .social{
+           flex: 0.5 1 auto;
+           display: flex;
+       }
+       .social a{
+           color: #fff;
+           font-size: 20px;
+           text-decoration: none;
+           margin: 5px;
+       }
+       .social a:hover{
+           color: #b40c0c;
+       }
+       .social a:active{
+           color: #ffc935;
+       }
+       
+       .texto-principal{
+        background: rgba(0, 0, 0, 0.527);
+        height: 660px;
+        display: flex;
+        justify-content: center;
+       }
+
+       h1{
+        color: #fff;
+        font-family:cursive;
+        margin-top:  35%;
+       }
+       h1:hover{
+           color: #ffc935;
+       }
+       
+        
+
+.section{
+    display: flex;
+}
+
+.encabezado-art{
+    flex: 1 1 100%;
+    margin: 10px 10px 0 0;
+}
+    .articulos{
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    article{
+        flex: 1 1 45%;
+        color: #000;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 50px 20px 20px 0;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px #000;
+       }
+       
+       article img{
+           width: 100%;
+           border-radius: 20px;
+       }
+
+       h2{
+        color: #b40c0c;
+        margin: 10px;
+       }
+       h2:hover{
+        color: #ffc935;
+       }
+
+       h3{
+        color: #12b828;
+        margin: 10px;
+       }
+       p{
+           font-family: cursive;
+           margin: 20px;
+       }
+       article a{
+        color: #fff;
+        font-size: 13px;
+        padding: 10px;
+        background: #12b828;
+        margin: 0px 0px 30px 10px;
+        justify-content: center;
+        display: inline-block;
+        border-radius: 10px;
+       }
+
+       article a:hover{
+           background: #b40c0c;
+       }
+       article a:active{
+           background: #12b828;
+       }
+
+       .navegacion{
+           background: #000;
+           flex: 1 1 100%;
+           margin: 10px 10px 0 0;
+           border-radius: 5px;
+       }
+       .navegacion a{
+           color: #fff;
+           font-size: 11px;
+           text-transform: uppercase;
+           padding: 0 10px;
+           letter-spacing: 2px;
+       }
+
+.encabezado-ads{
+        flex: 1 1 100%;
+        margin: 10px 10px 0 0;
+    }
+    .aside{
+        flex: 1 1 auto;
+        margin: 10px 5px 10px 0;
+        box-shadow: 0px 0px 10px 0px #000;
+    }
+    .publicidad{
+        background: #b40c0c;
+    }
+    .aside img{
+        width: 100%;
+    }
+    h4{
+        background: #000;
+        color: #fff;
+        padding: 10px;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    height: 300px;
+}
+    .pie{
+        color: #fff;
+        text-align: center;
+    }
+    .pie a{
+           color: #fff;
+           font-size: 11px;
+           text-transform: uppercase;
+           padding: 0 10px;
+           letter-spacing: 2px;
+    }
+
+@media all and (max-width: 1280px){
+    .logo{
+        height: 70px;
+        width: 130px;
+    }
+    
+    
+}
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+        width: 800px;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .header{
+        background: url(/resources/antojitos_el_modelo/portada.jpeg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        height: 480px;
+        width: 800px;
+        margin-bottom: 50%;
+        box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.596);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .logo{
+        flex-direction: column;
+        height: 70px;
+        width: 130px;
+    }
+    .aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50%;
+    }
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        height: 300px;
+        width: 800px;
+    }
+}
+@media all and (max-width: 600px){
+    .section{
+        flex-direction: column;
+        width: 600px;
+    }
+    .articulos{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50%;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .header{
+        background: url(/resources/antojitos_el_modelo/portada.jpeg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        height: 480px;
+        width: 600px;
+        margin-bottom: 50%;
+        box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.596);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        height: 600px;
+        width: 600px;
+    }
+
+    
+}
+@media all and (max-width: 500px){
+    .section{
+        flex-direction: column;
+        width: 600px;
+    }
+    .articulos{
+        flex-direction: column;
+
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50%;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .header{
+        background: url(/resources/antojitos_el_modelo/portada.jpeg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        height: 300px;
+        width: 600px;
+        margin-bottom: 50%;
+        box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.596);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    h1{
+        color: #fff;
+        font-family:cursive;
+        margin-top:  8%;
+       }
+
+        
+}
